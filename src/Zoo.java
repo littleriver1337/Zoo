@@ -24,6 +24,14 @@ public class Zoo {
             case "condor":
                 animal = new Condor();
                 break;
+            case "alligator":
+                animal = new Reptile(){//creates annon class within your code
+                    @Override
+                    public String toString(){//overrides toString();
+                        return "Alligator";
+                    }
+                };
+                break;
             default:
                 animal = new Animal();
         }
